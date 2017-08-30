@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+nav  { background-color: white;}
+
+nav p { font: Sans Regular;
+        font-size: .9em;
+         color: #323232; }
+nav h1 { font: Sans Narrow;
+         font-size: 1.53m;
+         color: #323232; }
+
+.main h1 { text-align: center; }
+
+.main p h3 { text-align: text-align; }
+
+h1 {font: Sans Narrow;
+    font-weight: bold;
+    font-size: 1.875em;
+     color: #323232; }
+
+h2 {color: #00897F;
+    font: Sans Narrow;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h3 { font: Serif;
+     font-size: 1em;
+    line-height: 2em;
+    color: #323232; }
+
+p { font: Sans Regular;
+    font-size: .9em;
+    color: #323232;}
+.cathat .hawaiicat .evilcat {display: inline;}
+
+
+
+footer { width: auto;
+         height: 125px;
+         background-color: #00897F; }
+
+
+footer h1 { font: Sans Narrow;
+            font-weight: bold;
+            font-size: 1.25em;
+            color: #323232;
+            text-align: center;  }
+
+
+/* On devices wider than 660px */
+@media(min-width: 660px) {
+}
+
+/* On devices wider than 940px */
+@media(min-width: 940px) {
+}
