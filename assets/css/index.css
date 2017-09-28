@@ -1,59 +1,198 @@
-body {
-  margin: 0;
-  background-color: white;
-}
-nav  { background-color: white;}
+body { margin: 0;
+       background-color: white;}
 
-nav p { font: Sans Regular;
+h1 {font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 1.875em;
+    color: #323232; }
+
+h2 {color: #00897F;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;}
+
+h3 { font-family: 'PT Serif', serif;
+     font-size: 1em;
+     line-height: 2em;
+     color: #323232; }
+
+p { font-family: 'PT Serif', serif;
+    font-size: .9em;
+    color: #323232;}
+
+.nav { background-color: white;
+       height: 80px;
+       width:auto;}
+
+.nav p {font-family: 'PT Sans', serif;
         font-size: .9em;
-         color: #323232; }
-nav h1 { font: Sans Narrow;
-         font-size: 1.53m;
-         color: #323232; }
+        color: #323232;}
+
+.nav .title { display:inline-block;
+              float: left;
+              vertical-align: top;}
+
+.nav .nav_about {text-align: right;
+                 float: right;
+                 vertical-align:top;
+                 margin-right: 70px;
+                 margin-top: 15px;}
+
+.nav .nav_contact {text-align: right;
+                   float: right;
+                   vertical-align:top;
+                   margin-right: 50px;
+                   margin-top: 15px;}
+
+.nav h1 { font-family: 'PT Sans Narrow', sans-serif;
+          font-size: 1.53em;
+          color: #323232; }
+
+.splash img {width: 110%;}
 
 .main h1 { text-align: center; }
 
-.main p h3 { text-align: text-align; }
+.main p h3 { text-align: center;}
 
-h1 {font: Sans Narrow;
-    font-weight: bold;
-    font-size: 1.875em;
-     color: #323232; }
+.main #main_header { margin-left: auto;
+                     margin-right: auto;}
 
-h2 {color: #00897F;
-    font: Sans Narrow;
-    font-weight: bold;
-    font-size: 1.5em;
-}
+.main #main_paragraph { width: 45%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 80px;}
 
-h3 { font: Serif;
-     font-size: 1em;
-    line-height: 2em;
-    color: #323232; }
+.About {text-align: center;}
 
-p { font: Sans Regular;
-    font-size: .9em;
-    color: #323232;}
-.cathat .hawaiicat .evilcat {display: inline;}
+.About p.About_p { text-align:left;
+                   line-height: 2.5em;}
 
+.About #About_Kat {display: inline-block;
+                   vertical-align: top;
+                   height: 350px;
+                   width: 250px;
+                   background-color: #eeeeee;
+                   margin:auto;
+                   padding: 0 30px 0 30px;
+                   margin-bottom:20px;}
 
+.About #About_Kat h2 {text-align:center; }
+
+.About #About_Mavis {display: inline-block;
+                    vertical-align: top;
+                    height: 350px;
+                    width: 250px;
+                    background-color: #eeeeee;
+                    margin-right: 60px;
+                    padding: 0 30px 0 30px;
+                    margin:auto;}
+
+.About #About_Mavis h2 {text-align:center; }
+
+.About #About_Mavis p { text-align:left;}
+
+.cat_pics { text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;}
+
+.cat_pics #cathat { border-radius: 50%;
+                    margin-right: 55px;
+                    margin-bottom:20px;}
+
+.cat_pics #hawaiihat { border-radius: 50%;
+                       margin-right: 55px;
+                       margin-bottom: 20px;}
+
+.cat_pics #evilcat { border-radius: 50%;
+                     margin-right: 55px;
+                     margin-bottom: 20px; }
+
+.Info {background-color: #eeeeee; }
+
+.Info h1 {text-align: center;
+          padding-top: 80px;
+          padding-bottom: 45px;}
+
+.Info .Specific_Info { text-align: center;
+                       vertical-align: top;}
+
+.Info .business_hours {background: white;
+                       display: inline-block;
+                       margin-right: 60px;
+                       vertical-align: top;
+                       padding: 0 30px 0 30px;
+                       height: 250px;
+                       width: 300px;
+                       margin: auto;
+                       margin-bottom: 80px;}
+
+.Info .business_hours ul li { list-style: none;
+                              text-align: left;
+                              margin-bottom:20px;}
+
+.Info .Contact_Info {background: white;
+                     display: inline-block;
+                     padding: 0 30px 0 30px;
+                     text-align: center;
+                     height: 250px;
+                     width: 300px;
+                     margin: auto;
+                     margin-bottom: 80px;}
+
+.Info .Contact_Info h3 {text-align:left;}
+
+.Info .Contact_Info h3.address { padding-left: 75px;
+                                 margin-top: -49px;
+                                 color: #f26522;}
+
+.Info .Contact_Info h3.city { padding-left: 75px;
+                              margin-top: -15px;
+                              color: #f26522;}
+.map img {width: 100%;}
 
 footer { width: auto;
          height: 125px;
-         background-color: #00897F; }
+         background-color: #00897F;
+         margin-top: -25px;}
 
 
-footer h1 { font: Sans Narrow;
+footer h1 { font-family: 'PT Serif Narrow', sans-serif;
             font-weight: bold;
             font-size: 1.25em;
-            color: #323232;
-            text-align: center;  }
+            color: #eeeeee;
+            text-align: center;
+            padding-top: 50px;  }
 
+/* on devices wider than 400px*/
 
+@media (min-width: 400px) {
+  .nav .nav_about {margin-right: 15px;
+                   margin-top: 15px;}
+  .nav .nav_contact {margin-right: 15px;
+                     margin-top: 15px;}
+  .nav .title {margin-left: 10px;}
+
+}
 /* On devices wider than 660px */
 @media(min-width: 660px) {
+.Info .business_hours {margin-right: 10px;}
+.About #About_Kat {margin-right: 30px;}
+.nav .nav_about {margin-right: 70px;
+                 margin-top: 15px;}
+.nav .nav_contact {margin-right: 50px;
+                   margin-top: 15px;}
+.nav .title {margin-left: 50px;}
 }
 
 /* On devices wider than 940px */
 @media(min-width: 940px) {
+  .Info .business_hours {margin-right: 60px;}
+  .About #About_Kat {margin-right: 60px;}
+  .nav .nav_about {margin-right: 70px;
+                   margin-top: 15px;}
+  .nav .nav_contact {margin-right: 50px;
+                     margin-top: 15px;}
+  .nav .title {margin-left: 50px;}
+
+
 }
